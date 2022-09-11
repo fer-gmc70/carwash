@@ -1,0 +1,9 @@
+.menu__lista{
+    display: inline-block;
+    list-style-type: none;
+    font-style: italic;
+    width: 100%;
+    overflow: hidden;
+    grid-column-start: 0;
+    grid-column-end: 1;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/agendamento.css">
+    <title>Car Wash - Agendamento </title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <p>Agendamento de lavagens</p>
+    </header>
+    <hr>
+    <main class="container">
+
+        <form id="form-inclusao">
+            <fieldset class="marca-modelo">
+                <legend class="legenda">Marca/Modelo</legend>
+                <label for="marca" placeholder="Selecione uma marca">Marca</label>
+                <select name="marca" id="marca" select=""> 
+                    <option value="" disabled selected>Selecione uma marca</option>
+                    <!-- <option class="marcas" value="Audi">Audi</option>
+                    <option class="marcas" value="BMW">BMW</option>
+                    <option class="marcas" value="Chevrolet">Chevrolet</option>
+                    <option class="marcas" value="Fiat">Fiat</option>
+                    <option class="marcas" value="Honda">Honda</option>
+                    <option class="marcas" value="Hyundai">Hyundai</option> -->
+                </select>
+                <label for="modelo">Modelo</label>
+                <select name="modelo" id="modelo">
+                    <option value=""></option>
+                </select>
+            </fieldset>
+            <fieldset class="cliente">
+                <legend class="legenda">Dados do cliente</legend>
+                <label for="nomeCliente">Nome do cliente</label>
+                <input type="text" name="nomeCliente" id="nomeCliente">
+                <label for="foneContato">Fone para contato</label>
+                <input type="tel" name="foneContato" id="foneContato">
+                <label for="email">Email para envio NFe</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+            <fieldset class="agenda">
+                <legend class="legenda">Agendamento</legend>
+                <label for="horaEntrada">Horário entrada</label>
+                <input type="datetime" name="horaEntrada" id="horaEntrada" readonly>
+                <label for="prevEntrega">Previsão entrega</label>
+                <input type="datetime" name="prevEntrega" id="prevEntrega">
+            </fieldset>
+            <fieldset class="servicos">
+                <legend class="legenda">Serviços a executar</legend>
+                <label for="servicosExecutar">Serviços a executar</label>
+                <select name="servicosExecutar" id="servicosExecutar">
+                    <option class="execucaoServico" value="lavagem com cera">Lavagem com cera</option>
+                    <option class="execucaoServico" value="lavagem com resina">Lavagem com resina</option>
+                    <option class="execucaoServicos" value="higienizacao">Higienização Interna</option>
+                    <option class="execucaoServico" value="polimento">Polimento</option>
+                </select>
+                <br>
+                <br>
+                <label for="observacoes">Observações</label>
+                <textarea name="observacoes" id="observacoes" cols="130" rows="05" spellcheck="true"></textarea>
+            </fieldset>
+
+            <input type="button" class="botao-adicionar" id="incluir-servico" value="Incluir serviço">
+        </form>
+        <hr>
+        <section class="listagem">
+            <p id="agendaPeriodo">Agenda do período</p>
+            <table class="tabela">
+                <thead>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Cliente</th>
+                    <th>Fone</th>
+                    <th>Email</th>
+                    <th>Data de Entrada</th>
+                    <th>Previsão de Entrega</th>
+                    <th>Serviços a executar</th>
+                    <th>Observações</th>
+                </thead>
+            </table>
+            
+        </section>
+    </main>
+</body>
+<script src="./assets/js/agendamento.js"></script>
+<script src="./assets/js/drop_modelos.js"></script>
+<script src="./assets/js/modelos.js"></script>
+<script src="./assets/js/marcas.js"></script>
+<script src="./assets/js/drop_marcas.js"></script>
+<script src="./assets/js/fechamento.js"></script>
+</html>

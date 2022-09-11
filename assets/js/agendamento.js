@@ -1,0 +1,96 @@
+var section = document.querySelector(".listagem");
+var horaEntrada = document.querySelector("#horaEntrada");
+
+horaEntrada.addEventListener("focus", function () {
+    horaEntrada.value =
+        new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString();
+});
+
+var previsaoEntrega = document.querySelector("#prevEntrega");
+
+previsaoEntrega.addEventListener("focus", function () {
+    var tempo = new Date();
+
+    if (tempo.getHours() + 2 > 24) {
+        var tempoTmp = new Date();
+        tempoTmp.setHours(tempo.getHours() + 2);
+        previsaoEntrega.value =
+            tempoTmp.toLocaleDateString() + " " + tempoTmp.toLocaleTimeString();
+    } else {
+        tempo.setHours(tempo.getHours() + 2);
+        previsaoEntrega.value =
+            tempo.toLocaleDateString() + " " + tempo.toLocaleTimeString();
+    }
+});
+
+var periodo = document.querySelector("#agendaPeriodo");
+periodo.textContent = "Agendamento: " + new Date().toLocaleDateString();
+
+var botaoIncluir = document
+    .querySelector("#incluir-servico")
+    .addEventListener("click", function () {
+        event.preventDefault();
+        var formAgendamento = document.querySelector("#form-inclusao");
+        var marca = formAgendamento.marca.value;
+        var modelo = formAgendamento.modelo.value;
+        var cliente = formAgendamento.nomeCliente.value;
+        var contato = formAgendamento.foneContato.value;
+        var email = formAgendamento.email.value;
+        var dtEntrada = formAgendamento.horaEntrada.value;
+        var prevEntrega = formAgendamento.prevEntrega.value;
+        var servicos = formAgendamento.servicosExecutar.value;
+        var observacao = formAgendamento.observacoes.value;
+
+        var tabela = document.querySelector(".tabela");
+
+        var listagemAgenda = document.createElement("tr");
+
+        var marcaTd = document.createElement("td");
+        var modeloTd = document.createElement("td");
+        var clienteTd = document.createElement("td");
+        var contatoTd = document.createElement("td");
+        var emailTd = document.createElement("td");
+        var dtEntradaTd = document.createElement("td");
+        var prevEntregaTd = document.createElement("td");
+        var servicosTd = document.createElement("td");
+        var observacaoTd = document.createElement("td");
+
+        marcaTd.textContent = marca;
+        modeloTd.textContent = modelo;
+        clienteTd.textContent = cliente.toUpperCase();
+        contatoTd.textContent = contato;
+        emailTd.textContent = email.toLowerCase();
+        dtEntradaTd.textContent = dtEntrada;
+        prevEntregaTd.textContent = prevEntrega;
+        servicosTd.textContent = servicos.toUpperCase();
+        observacaoTd.textContent = observacao.toUpperCase();
+
+        listagemAgenda.appendChild(marcaTd);
+        listagemAgenda.appendChild(modeloTd);
+        listagemAgenda.appendChild(clienteTd);
+        listagemAgenda.appendChild(contatoTd);
+        listagemAgenda.appendChild(emailTd);
+        listagemAgenda.appendChild(dtEntradaTd);
+        listagemAgenda.appendChild(prevEntregaTd);
+        listagemAgenda.appendChild(servicosTd);
+        listagemAgenda.appendChild(observacaoTd);
+
+        tabela.appendChild(listagemAgenda);
+        section.appendChild(tabela);
+        formAgendamento.reset();
+        let tabelaAgendamento = [];
+        tabelaAgendamento.push({ marca: marcaTd.textContent });
+        tabelaAgendamento.push({ modelo: modeloTd.textContent });
+        tabelaAgendamento.push({ cliente: clienteTd.textContent });
+        tabelaAgendamento.push({ contato: contatoTd.textContent });
+
+        let agendaJson = JSON.stringify(tabelaAgendamento);
+        
+        console.log(tabelaAgendamento);
+
+        var modelos = document.querySelector("#modelo");
+        var limparModelos = document.querySelectorAll(".modelos");
+        for (i = 0; i < limparModelos.length; i++) {
+            modelos.removeChild(document.querySelector(".modelos"));
+        }
+    });

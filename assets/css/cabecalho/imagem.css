@@ -1,0 +1,45 @@
+.imagem {
+    position:relative;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url("../../pics/woman-with-baby-son-choosing-a-car-in-a-car-salon.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px 0px;
+    overflow: hidden;
+    height: 100vh;
+    -webkit-filter: drop-shadow(10px 10px 10px #222222);
+    filter: drop-shadow(25px 25px 25px #222222);
+    border-radius: 4px;
+}
+
+.imagem__titulo {
+    position: absolute;
+    font-family: "Lobster", cursive;
+    top: 40%;
+    color: transparent;
+    /* margin: 5px 0px; */
+    font-size: 40px;
+    animation: moveToRight 20s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateY(0%) translateX(0%);
+        color: transparent;
+    }
+    
+    40% {
+        transform: translateY(50%) translateX(50%);
+        color: rgba(2, 2, 71,.5);
+    }
+    
+    100% {
+        transform: translateY(100%) translateX(100%);
+        color: rgba(2, 2, 71,1);
+    }
+}
