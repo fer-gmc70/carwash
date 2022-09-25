@@ -1,9 +1,9 @@
-window.addEventListener('beforeunload', function(e){
-    e.preventDefault();
-    e.returnValue="";
-}) 
+// window.addEventListener('beforeunload', function(e){
+//     e.preventDefault();
+//     e.returnValue="";
+// }) 
 
-const tabela = document.querySelectorAll(".tabela")
+// const tabela = document.querySelectorAll(".tabela")
 
 
 

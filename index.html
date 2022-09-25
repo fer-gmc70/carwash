@@ -5,92 +5,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Estilização de estilos -->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
-    <link rel="stylesheet" href="./assets/css/cabecalho/menu-nav.css">
-    <link rel="stylesheet" href="./assets/css/cabecalho/menu-titulo.css">
-    <link rel="stylesheet" href="./assets/css/cabecalho/menu-lista.css">
-    <link rel="stylesheet" href="./assets/css/cabecalho/menu-lista-itens.css">
-    <link rel="stylesheet" href="./assets/css/cabecalho/imagem.css">
+    <link rel="stylesheet" href="./assets/css/container/servicos/container.css">
     <link rel="stylesheet" href="./assets/css/container/servicos/servico-descritivo.css">
-    <link rel="stylesheet" href="./assets/css/container/servicos/servicos-lista.css">
-    <link rel="stylesheet" href="./assets/css/container/servicos/servicos.css">
-    <link rel="stylesheet" href="./assets/css/container/servicos/servicos-titulo.css">
-    <link rel="stylesheet" href="./assets/css/container/servicos/servicos-lista-titulo.css">
-    <link rel="stylesheet" href="./assets/css/container/servicos/servicos-lista-item.css">
-    <link rel="stylesheet" href="./assets/css/rodape/fornecedores-titulo.css">
-    <link rel="stylesheet" href="./assets/css/rodape/fornecedores-lista.css">
 
+    <link rel="stylesheet" href="./assets/css/rodape/rodape.css">
+    <!-- Estilização de fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <title>Car Wash </title>
-    
 </head>
 
 <body>
-    <header class="cabecalho">
-        <!-- <img class="imagem-rock" src="./assets/pics/rroll.png" alt=""> -->
-        <p>Car Wash - Seu carro em excelente mãos</p>  
-        <nav class="menu__nav">
-            <h1 class="menu__titulo">Acesse os links abaixo</h1>
-            <ul class="menu__lista">
-                <li class="menu__lista__itens"><a href="./agendamento.html">Agendar lavagem</a></li>
-                <li class="menu__lista__itens"><a href="./consulta.html">Consultar lavagem</a></li>
-                <li class="menu__lista__itens"><a href="./faturamento.html">Faturamento</a></li>
-                <li class="menu__lista__itens"><a href="./historico.html">Histórico</a></li>
-                <li class="menu__lista__itens"><a href="./resumo.html">Resumos</a></li>
-            </ul>
-        </nav>
-        <section class="imagem">
-            <h2 class="imagem__titulo">Um compromisso com quem importa</h2>
+    <header>
+        <section class="cabecalho__principal">
+            <div class="cabecalho__principal--banner">
+                <h1>Car Wash - Seu carro em boas mãos</h1>
+                <video src="./assets/midias/videos/lavagem-banner.mp4" autoplay loop muted></video>
+            </div>
+            <div class="cabecalho__principal--menu">
+                <nav>
+                    <a href="/index.html">Home</a>
+                    <a href="./assets/telas/agendamento.html">Agendamentos</a>
+                    <a href="./assets/telas/consulta.html">Consultas</a>
+                    <a href="./assets/telas/resumo.html">Resumos</a>
+                </nav>
+            </div>
         </section>
     </header>
     <main class="container">
-        <section class="servicos">
-            <h1 class="servicos__titulo">Nossos serviços</h1>
-            <ul class="servicos__lista">
-                <li class="servicos__lista__item" id="lavagem">
-                    <h2 class="servicos__lista__titulo">Lavagem</h2>
-                    <img src="./assets/pics/lavagem-auto.jpg" alt="">
-                </li>
-                <li class="servicos__lista__item" id="cristalizacao">
-                    <h2 class="servicos__lista__titulo">Cristalização</h2>
-                    <img src="./assets/pics/cristalizacao-carro.jpg" alt="">
-                </li>
-                <li class="servicos__lista__item" id="higienizacao">
-                    <h2 class="servicos__lista__titulo">Higienizaçao</h2>
-                    <img src="./assets/pics/higienizacao-bancos.jpg" alt="">
-                </li>
-                <li class="servicos__lista__item" id="polimento">
-                    <h2 class="servicos__lista__titulo">Polimento</h2>
-                    <img src="./assets/pics/polimento.jpg" alt="">
-                </li>
-            </ul>
+        <section class="container__servicos--principal">
+            <h1>Nossos serviços</h1>
+            <div class="container__servicos--lavagem">
+                <div id="servicos__lavagem">
+                    <a href="#descricao__servicos--lavagem">
+                        <video src="./assets/midias/videos/lavagem-auto.mp4" type="video/mp4" autoplay loop
+                            muted></video>Lavagem
+                    </a>
+                </div>
+            </div>
+
+            <div class="container__servicos--higienizacao---Bancos">
+                <div id="servicos__higienizacaoBancos">
+                    <a href="#descricao__servicos--higienizacaoBancos">
+                        <video src="./assets/midias/videos/higienizacao-bancos.mp4" type="video/mp4" autoplay loop
+                            muted></video>Higienizacao Bancos
+                    </a>
+                </div>
+            </div>
+            <div class="container__servicos--higienizacao---Interna">
+                <div id="servicos__higienizacaoInterna">
+                    <a href="#descricao__servicos--higienizacaoInterna">
+                        <video src="./assets/midias/videos/higienizacao-interna.mp4" type="video/mp4" autoplay loop
+                            muted></video>Higienização Interna
+                    </a>
+                </div>
+            </div>
+            <div class="container__servicos--cristalizacao">
+                <div id="servicos__cristalizacao">
+                    <a href="#descricao__servicos--cristalizacao">
+                        <video src="./assets/midias/videos/espelhamento.mp4" type="video/mp4" autoplay loop
+                            muted></video>Cristalização
+                    </a>
+                </div>
+            </div>
+            <div class="container__servicos--polimento">
+                <div id="servicos__polimento">
+                    <a href="#descricao__servicos--polimento">
+                        <video src="./assets/midias/videos/polimento.mp4" type="video/mp4" autoplay loop
+                            muted></video>Polimento
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="descricao__servicos">
+            <div id="descricao__servicos--lavagem">
+                <img class="descricao__servicos--img" src="./assets/pics/lavagem-auto.jpg" alt="">
+                <article>
+                    <p>"Serviço de lavagem com cera que dá brilho e protege a pintura contra os efeitos da natureza."
+                    </p>
+                </article>
+
+            </div>
+            <div id="descricao__servicos--higienizacaoBancos">
+                <img class="descricao__servicos--img" src="./assets/pics/higienizacao-bancos.jpg" alt="" srcset="">
+                <article>
+                    <p>"A higienização é uma limpeza profunda feita no interior e exterior do carro. Seu principal
+                        objetivo é impedir que alguns fungos e germes possam surgir dentro do seu veículo. Neste
+                        processo, são aplicados produtos com propriedade para eliminar agentes nocivos fazendo uma
+                        limpeza profunda no veículo."</p>
+                </article>
+            </div>
+            <div id="descricao__servicos--higienizacaoInterna">
+                <img class="descricao__servicos--img" src="./assets/pics/higienizacao-interna.jpg" alt="" srcset="">
+                <article>
+                    <p>"A higienização é uma limpeza profunda feita no interior e exterior do carro. Seu principal
+                        objetivo é impedir que alguns fungos e germes possam surgir dentro do seu veículo. Neste
+                        processo, são aplicados produtos com propriedade para eliminar agentes nocivos fazendo uma
+                        limpeza profunda no veículo."</p>
+                </article>
+            </div>
+            <div id="descricao__servicos--cristalizacao">
+                <img class="descricao__servicos--img" src="./assets/pics/cristalizacao-carro.jpg" alt="" srcset="">
+                <article>
+                    <p>"Serviço de cristalização de pintura onde é aplicado uma camada de resina que protege e
+                        revitaliza a pintura do veículo."</p>
+                </article>
+            </div>
+            <div id="descricao__servicos--polimento">
+                <img class="descricao__servicos--img" src="./assets/pics/polimento.jpg" alt="" srcset="">
+                <article>
+                    <p>"O polimento automotivo é um procedimento que ajuda na estética do veículo. Ele remove a tinta
+                        danificada do automóvel para outro processo de pintura."</p>
+                </article>
+            </div>
+
+
         </section>
     </main>
     <footer class="rodape">
-        <section class="fornecedores">
-            <h1 class="fornecedores__titulo">Trabalhamos com as melhores marcas do mercado</h1>
-            <ul class="fornecedores__listas">
-                <li class="fornecedor__lista">
-                    <img alt="" src="./assets/pics/brazzo.png">
-                </li>
-                <li class="fornecedor__lista">
-                    <img alt="" src="./assets/pics/johnson.png">
-                </li>
-                <li class="fornecedor__lista">
-                    <img alt="" src="./assets/pics/scjohnson.png">
-                </li>
-                <li class="fornecedor__lista">
-                    <img alt="" src="./assets/pics/logo-3m-4096.png">
-                </li>
-            </ul>
+        <h3 class="rodape__titulo">Utilizamos os produtos das melhores marcas disponíveis no mercado </h3>
+        <section class="rodape__produtos">
+            <img src="./assets/pics/brazzo-bg.png" alt="">
+            <img src="./assets/pics/logo-3m-bg.png" alt="">
+            <img src="./assets/pics/scjohnson-bg.png" alt="">
+            <img src="./assets/pics/johnson-bg.png" alt="">
+        </section>
+        <div>
+            <h3 class="rodape__redeSociais--titulo">Siga-nos</h3>
+        </div>
+        <section class="rodape__redesSociais">
+            <div class="rodape__redeSociais--face">
+                <img src="./assets/pics/facebook.png" alt="">
+            </div>
+            <div class="rodape__redeSociais--insta">
+                <img src="./assets/pics/insta.png" alt="">
+            </div>
         </section>
     </footer>
+    <section class="rodape__redeSociais--siga">
+        <div class="rodape__redeSociais--sigaWhatsapp">
+            <img src="./assets/pics/whatsapp-logo-icone.png" alt="">
+            <h3>Fale conosco</h3>
+        </div>
+    </section>
 </body>
-<script src="./assets/js/index.js"></script>
+<script src="./assets/js/servicos-descritivo.js"></script>
+
 </html>

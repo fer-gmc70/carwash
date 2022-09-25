@@ -1,22 +1,47 @@
-.cabecalho {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-auto-rows: 90px;
-    grid-gap: 5px;
-    position:relative;
-}
-.cabecalho p {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 0;
-    grid-row-end: 1;
-    font-family: "Libre Baskerville", serif;
-    text-align: center;
-    color: antiquewhite;
-    font-weight: bold;
-    font-size: 30px;
-    padding: 50px 0px;
-    /* finger-paint-regular - latin */
+.cabecalho__principal{
+    position: fixed;
+    z-index: 2;
     
+}
 
+.cabecalho__principal--banner{
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.cabecalho__principal--banner h1{
+    color:aliceblue;
+    z-index: 2;
+    font-size: 2em;
+}
+.cabecalho__principal--banner video{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.cabecalho__principal--menu nav{
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10.3%;
+    opacity: .54;
+    padding:1em 0;
+    z-index: 2;
+    width: 100vw;
+}
+
+.cabecalho__principal--menu a{
+    color: white;
+    position: sticky;
+    text-decoration: none;
+    z-index: 3;
 }

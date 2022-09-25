@@ -1,9 +1,0 @@
-.servicos__lista {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    padding-right: 5px;
-}

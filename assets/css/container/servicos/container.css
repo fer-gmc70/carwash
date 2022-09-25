@@ -1,0 +1,114 @@
+
+.container__servicos--principal{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 99vw;
+}
+
+.container__servicos--principal h1{
+    position: absolute;
+    margin-top:20%;
+    width: 100vw;
+    text-align: center;
+    font-family: Bree,cursive;
+    font-size:2em;
+}
+
+
+.container__servicos--lavagem{
+    margin-top: 28%;
+    width: 20vw;
+    height: 20vh;
+    text-align: center;    
+}
+
+.container__servicos--lavagem video{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    width: 95%;
+    height: 100%;
+    padding-bottom:1.5em;
+}
+
+.container__servicos--lavagem a{
+    text-decoration: none;
+    
+}
+
+.container__servicos--higienizacao---Bancos{
+    margin-top: 28%;
+    width: 20vw;
+    height: 20vh;
+    text-align: center;
+    
+}
+.container__servicos--higienizacao---Bancos a{
+    text-decoration: none;
+    
+}
+
+.container__servicos--higienizacao---Bancos video{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    width: 95%;
+    height: 100%;
+    padding-bottom:1.5em;
+}
+
+.container__servicos--higienizacao---Interna{
+    margin-top: 28%;
+    width: 20vw;
+    height: 20vh;
+    text-align: center;
+}
+
+.container__servicos--higienizacao---Interna a{
+    text-decoration: none;
+    
+}
+
+.container__servicos--higienizacao---Interna video{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    width: 95%;
+    height: 100%;
+    padding-bottom:1.5em;
+}
+
+.container__servicos--cristalizacao{
+    margin-top: 28%;
+    width: 20vw;
+    height: 20vh;
+    text-align: center;
+    
+}
+
+.container__servicos--cristalizacao a{
+    text-decoration: none;
+    
+}
+
+.container__servicos--cristalizacao video{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    width: 95%;
+    height: 100%;
+    padding-bottom:1.5em;
+}
+.container__servicos--polimento{
+    margin-top: 28%;
+    width: 20vw;
+    height: 20vh;
+    text-align: center;
+    
+}
+
+.container__servicos--polimento a{
+    text-decoration: none;
+    
+}
+.container__servicos--polimento video{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    width: 95%;
+    height: 100%;
+    padding-bottom:1.5em;
+    overflow: hidden;
+}

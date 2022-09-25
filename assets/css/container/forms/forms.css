@@ -1,0 +1,20 @@
+.container__form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid blue;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.container__form h1{
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.container__form input,labels{
+    padding: 0 2%;
+}
+

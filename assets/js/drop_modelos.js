@@ -8,8 +8,6 @@ Marca.addEventListener("change", function () {
     var listaModelos = modeloMarca.filter(
         (modeloMarca) => modeloMarca["Marca"] === Marca.value
     );
-    console.log(listaModelos);
-    console.log(typeof listaModelos);
 
     var limparModelos = document.querySelectorAll(".modelos")
     for (i = 0; i < limparModelos.length; i++) {
@@ -17,7 +15,6 @@ Marca.addEventListener("change", function () {
     };
 
     for (i = 0; i < listaModelos.length; i++) {
-        console.log(listaModelos[i]["Modelo"]);
         var opcao1 = document.createElement('option');
         opcao1.classList.add("modelos");
         opcao1.textContent = listaModelos[i]["Modelo"];

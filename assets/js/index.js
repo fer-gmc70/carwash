@@ -1,13 +1,13 @@
-var lavagem = document.querySelector("#lavagem");
-var cristalizacao = document.querySelector("#cristalizacao");
-var higienizacao = document.querySelector("#higienizacao");
-var polimento = document.querySelector("#polimento");
+const lavagem = document.querySelector("#lavagem");
+const cristalizacao = document.querySelector("#cristalizacao");
+const higienizacao = document.querySelector("#higienizacao");
+const polimento = document.querySelector("#polimento");
 
 
 
 // function mensagem() {
     
-var servicos = document.querySelector(".container");
+let servicos = document.querySelector(".container");
 let h1 = document.createElement("h1");
 let p = document.createElement("p");
 let section = document.createElement("section");
@@ -28,7 +28,7 @@ cristalizacao.addEventListener('mouseover', function(){
     h1.textContent = "Cristalização";
     
     p.textContent =
-    "Serviço de cristalização de pintura onde é aplicado uma camada de resina que protege e revitaliza a pintura do veículo";
+    "Serviço de cristalização de pintura onde é aplicado uma camada de resina que protege e revitaliza a pintura do veículo.";
     
 })
 
@@ -52,11 +52,3 @@ polimento.addEventListener('mouseover', function(){
 section.appendChild(h1);
 section.appendChild(p);
 section.classList.add("servicos__descritivo");
-    
-
-// }
-
-// lavagem.onclick = mensagem;
-// cristalizacao.onclick = mensagem;
-// higienizacao.onclick = mensagem;
-// polimento.onclick = mensagem;
