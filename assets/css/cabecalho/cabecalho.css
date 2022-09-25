@@ -68,3 +68,10 @@
     height:100%;
     object-fit: cover;
 }
+
+.cabecalho__secundario--nav a{
+    color: white;
+    position: sticky;
+    text-decoration: none;
+    z-index: 3;
+}
