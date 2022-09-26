@@ -6,6 +6,7 @@
     justify-content: center;
     top:3em;
     z-index:2;
+    box-sizing: border-box;
 }
 .cabecalho__banner--titulo {
     font-family: var(--fonte-textoTitulo);
@@ -28,6 +29,7 @@
  position: fixed;
  top:0%;
  padding: 1em;
+ z-index: 2;
 }
 
 .cabecalho__menu--items{
@@ -39,7 +41,7 @@
     align-self: center;
 }
 .cabecalho__nav--ancor {
-    color: var(--cor-textoLinkPrincipal);
+    color: var(--cor-tituloPrincipal);
     font-family: var(--fonte-textoLink);
     font-size: 0.9em;
     text-decoration: none;
