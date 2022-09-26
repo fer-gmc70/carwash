@@ -1,7 +1,7 @@
 .cabecalho__banner {
     position: fixed;
     width: 100%;
-    height: 10vw;
+    height: 30vw;
     display: flex;
     justify-content: center;
     top:1.4%;
@@ -32,7 +32,7 @@
 .cabecalho__menu--items{
     position: relative;
     display: flex;
-    width:100vw;
+    width:80vw;
     flex-direction: row;
     justify-content: space-between;
     align-self: center;
@@ -44,6 +44,6 @@
     font-size: 0.9em;
     text-decoration: none;
     font-weight: 600;
-    padding: 0 2em;
+    padding: 0 .4em;
     margin: 0 1em 0 1em;
 }
