@@ -1,0 +1,22 @@
+@import url("/assets/css/cabecalho.css");
+
+:root {
+    --cor-bgPrincipal: #69788c;
+    --cor-bgSecundario: #8a99a6;
+    --cor-bannerPrincipal: #011640;
+    --cor-bannerSecundario: #4951F2;
+    --cor-tituloPrincipal:#203f59;
+    --cor-tituloSecundario: #010326 ;
+    --cor-textoPrincipal: #8C7472;
+    --cor-textoSecundario: #627173;
+    --cor-textoLinkPrincipal:#B69F5E;
+    --cor-textoLinkSecundario:#aec6cf;
+    --fonte-textoPrincipal:'Poppins', sans-serif;
+    --fonte-textoSecundario:'Bad Script', cursiva;
+    --fonte-textoTitulo:'Cabin Sketch', cursive;;
+    --fonte-textoDescricao:'Didact Gothic', sans-serif;
+    --fonte-textoLink:'Abyssinica SIL', serif;
+}
+body {
+    background: #d9d3cc;
+}
