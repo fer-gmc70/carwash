@@ -4,7 +4,7 @@
     height: 30vw;
     display: flex;
     justify-content: center;
-    top:4%;
+    top:3em;
     z-index:2;
 }
 .cabecalho__banner--titulo {
@@ -27,6 +27,7 @@
 .cabecalho__nav {
  position: fixed;
  top:0%;
+ padding: 1em;
 }
 
 .cabecalho__menu--items{
@@ -36,7 +37,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-self: center;
-    
 }
 .cabecalho__nav--ancor {
     color: var(--cor-textoLinkPrincipal);
@@ -44,6 +44,5 @@
     font-size: 0.9em;
     text-decoration: none;
     font-weight: 600;
-    padding: 0 .4em;
     margin: 0 1em 0 1em;
 }
