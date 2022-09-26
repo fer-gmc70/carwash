@@ -41,35 +41,41 @@
     </header>
     <main class="container">
         <!-- Slider main container -->
-        <div class="swiper">
+        <h1>Nossos serviços</h1>
+        <section class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="./assets/pics/cristalizacao-carro.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./assets/pics/higienizacao-bancos.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./assets/pics/higienizacao-interna.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./assets/pics/lavagem-auto.jpg" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="./assets/pics/cristalizacao-carro.jpg" alt="">
+                    <h3>Cristalização de pintura</h3>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/pics/higienizacao-bancos.jpg" alt="">
+                    <h3>Higienizacao de bancos</h3>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/pics/higienizacao-interna.jpg" alt="">
+                    <h3>Higienização Interna</h3>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/pics/lavagem-auto.jpg" alt="">
+                    <h3>Lavagem com resina</h3>
+                </div>
                 ...
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
+            <!-- If we need navigation buttons
             <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-next"></div> -->
 
             <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-        </div>
-
-        <section class="container__servicos">
-            <div class="container__servicos--imagem">
-
-                <div class="contaner__servicos--descricao">
-                    <p></p>
-                </div>
-            </div>
+            <!-- <div class="swiper-scrollbar"></div> -->
         </section>
+
+ 
     </main>
     <footer></footer>
 
@@ -77,6 +83,13 @@
     <script>
         const swiper = new Swiper('.swiper', {
             effect: 'cards',
+            autoplay: {
+                delay: 5000,
+              },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+              },
             cardsEffect: {
                 perSlideOffset:8,
                 perSlideRotate:true,
