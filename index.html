@@ -18,24 +18,74 @@
         href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Bad+Script&family=Cabin+Sketch&family=Didact+Gothic&family=Poppins&display=swap"
         rel="stylesheet">
 
+    <!-- Definição de sliders -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
     <header class="cabecalho">
         <div class="cabecalho__banner">
             <h2 class="cabecalho__banner--titulo">Car Wash</h2>
-            <video class="cabecalho__banner--video" src="/assets/midias/videos/lavagem-auto.mp4" type="video/mp4" autoplay loop
-                muted></video>
+            <video class="cabecalho__banner--video" src="/assets/midias/videos/lavagem-auto.mp4" type="video/mp4"
+                autoplay loop muted></video>
         </div>
         <div class="cabecalho__nav">
-            <a class="cabecalho__nav--ancor" href="/index.html">Home</a>
-            <a class="cabecalho__nav--ancor" href="#">Agendamento</a>
-            <a class="cabecalho__nav--ancor" href="#">Consultas</a>
-            <a class="cabecalho__nav--ancor" href="#">Histórico</a>
+            <input class="cabecalho__menu" type="checkbox" name="menu" id="menu">
+            <label class="cabecalho__menu--items" for="menu">
+                <a class="cabecalho__nav--ancor" href="./index.html">Home</a>
+                <a class="cabecalho__nav--ancor" href="#">Agendamento</a>
+                <a class="cabecalho__nav--ancor" href="#">Consultas</a>
+                <a class="cabecalho__nav--ancor" href="#">Histórico</a>
+            </label>
         </div>
     </header>
-    <main></main>
+    <main class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/pics/cristalizacao-carro.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./assets/pics/higienizacao-bancos.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./assets/pics/higienizacao-interna.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./assets/pics/lavagem-auto.jpg" alt=""></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <section class="container__servicos">
+            <div class="container__servicos--imagem">
+
+                <div class="contaner__servicos--descricao">
+                    <p></p>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            effect: 'cards',
+            cardsEffect: {
+                perSlideOffset:8,
+                perSlideRotate:true,
+                slideShadows:false,
+
+              // ...
+            },
+          });
+    </script>
 </body>
 
 </html>

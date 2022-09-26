@@ -1,0 +1,9 @@
+.container{
+    position: relative;
+    margin-top: 30%;
+}
+
+.container__servicos{
+    position: absolute;
+    display: flex;
+}
