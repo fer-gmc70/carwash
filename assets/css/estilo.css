@@ -1,6 +1,6 @@
-@import url("./cabecalho.css");
-@import url("./container.css");
-@import url("./swiper.css");
+@import url("cabecalho.css");
+@import url("container.css");
+@import url("swiper.css");
 
 :root {
     --cor-bgPrincipal: #69788c;
