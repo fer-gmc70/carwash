@@ -9,6 +9,7 @@
     flex-direction: row;    
     flex-grow: 1;
     flex-basis: auto;
+    flex-wrap: wrap;
 }
 
 .servicos__tipos--listaItems{
@@ -22,9 +23,6 @@
 
 .servicos__tipos__listaItems--links{
     display: flex;
-    
-    flex-wrap: wrap;
-    
     flex-direction: column;
     align-items: center;
     gap: 2em;

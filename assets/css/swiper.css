@@ -16,7 +16,7 @@
     font-family: var(--fonte-textoDescricao);
     color: var(--cor-titulo-swiper);
     font-size: 1.9em;
-    flex-wrap: wrap;
+    word-wrap: wrap;
 }
 
 .swiper-slide img {
