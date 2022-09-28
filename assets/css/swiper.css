@@ -8,6 +8,7 @@
     position: relative;
     top:0%;
     display: flex;
+    justify-content: center;
 }
 .swiper-slide h3{
     position: absolute;
@@ -17,6 +18,8 @@
     color: var(--cor-titulo-swiper);
     font-size: 1.9em;
     word-wrap: wrap;
+    text-align: center;
+
 }
 
 .swiper-slide img {
