@@ -1,5 +1,6 @@
 .container__servicos{
     display: grid;
+    width: 370px;
     grid-template-columns: 1fr 1fr auto;
     grid-gap:2em;
     padding: 1em;
@@ -20,6 +21,7 @@
     text-align: justify;
     font-family: var(--fonte-textoDescricao);
     font-weight: 500;
+    font-size: 0.5em;
 }
 .container__servicos--video{
     max-width:100%;
