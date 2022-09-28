@@ -23,7 +23,7 @@
 }
 .container__servicos--descritivo{
     grid-row: 3;
-    grid-column: 1/2;
+    grid-column: 0/2;
     text-align: justify;
     font-family: var(--fonte-textoDescricao);
     font-weight: 500;
