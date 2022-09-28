@@ -22,9 +22,10 @@
     font-weight: 500;
 }
 .container__servicos--video{
-    width:100%;
-    object-fit: cover;
+    max-width:100%;
+    object-fit: contain;
     grid-row: 2;
+    grid-column: 2;
 
 
 }
