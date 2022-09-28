@@ -13,7 +13,7 @@
 .swiper-slide h3{
     position: absolute;
     top: 3em;
-    padding: 1em .3em;
+    padding: 1em 1.5em;
     font-family: var(--fonte-textoDescricao);
     color: var(--cor-titulo-swiper);
     font-size: 1.9em;
