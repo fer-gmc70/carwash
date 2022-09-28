@@ -2,8 +2,10 @@
     display: grid;
     width: 370px;
     grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: auto auto auto auto;
     grid-gap:2em;
     padding: 1em;
+    flex-wrap: wrap;
 }
 
 .container__servicos--titulo{
@@ -15,8 +17,12 @@
     font-weight: 500;
 }
 
-.container__servicos--descritivo{
+.container__servicos--breveResumo{
     grid-row: 2;
+    grid-column: 1/2;
+}
+.container__servicos--descritivo{
+    grid-row: 3;
     grid-column: 1/2;
     text-align: justify;
     font-family: var(--fonte-textoDescricao);
