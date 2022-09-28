@@ -17,6 +17,7 @@
     position: absolute;
     z-index: 2;
     overflow: hidden;
+    color: var(--cor-tituloSecundario);
 }
 
 .cabecalho__banner--video {
