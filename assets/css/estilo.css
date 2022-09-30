@@ -26,3 +26,13 @@
 body {
     background: #d9d3cc;
 }
+
+.negrito{
+    font-weight: bold;
+    font-style: italic;
+    color: darkcyan;
+}
+
+.italico{
+    font-style: italic;
+}
