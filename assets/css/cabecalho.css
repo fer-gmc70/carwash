@@ -8,18 +8,18 @@
         overflow: hidden;
         box-sizing: border-box;
         width: 100%;
-        height: 30vh;
+        height: 25vh;
     }
     .cabecalho__banner--titulo {
         font-family: var(--fonte-textoTitulo);
-        box-sizing: border-box;
         font-weight: 650;
-        font-size: 3.6em;
+        font-size: 4.5em;
         align-self: center;
         position: absolute;
         padding-top: 0.65em;
         z-index: 2;
         overflow: hidden;
+        box-sizing: border-box;
         color: var(--cor-tituloSecundario);
     }
 
@@ -29,7 +29,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        box-sizing: border-box;
         /* box-sizing: border-box; */
     }
 
@@ -70,7 +69,7 @@
     .cabecalho__banner {
         position: fixed;
         width: 100%;
-        height: 30vh;
+        height: 25vh;
         display: flex;
         justify-content: center;
         top: 2.3em;
@@ -80,12 +79,12 @@
     .cabecalho__banner--titulo {
         font-family: var(--fonte-textoTitulo);
         font-weight: 650;
-        font-size: 3.6em;
+        font-size: 4.5em;
         align-self: center;
         position: absolute;
+        padding-top: 0.65em;
         z-index: 2;
         overflow: hidden;
-        padding-top: 0.65em;
         box-sizing: border-box;
         color: var(--cor-tituloSecundario);
     }
@@ -96,9 +95,8 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
     }
-
     .cabecalho__nav {
         background-color: #01121b;
         box-sizing: border-box;
@@ -163,7 +161,6 @@
         object-fit: cover;
         /* box-sizing: border-box; */
     }
-
     .cabecalho__nav {
         background-color: #01121b;
         box-sizing: border-box;
@@ -215,7 +212,7 @@
         font-size: 4.5em;
         align-self: center;
         position: absolute;
-        padding-top: 0.5em;
+        padding-top: 0.65em;
         z-index: 2;
         overflow: hidden;
         box-sizing: border-box;
