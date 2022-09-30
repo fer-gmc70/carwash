@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
     .cabecalho__banner {
         position: fixed;
         display: flex;
@@ -208,12 +208,12 @@
     .cabecalho__banner--titulo {
         font-family: var(--fonte-textoTitulo);
         font-weight: 650;
-        font-size: 3.6em;
+        font-size: 4.5em;
         align-self: center;
         position: absolute;
         z-index: 2;
         overflow: hidden;
-        /* box-sizing: border-box; */
+        box-sizing: border-box;
         color: var(--cor-tituloSecundario);
     }
 
@@ -252,7 +252,7 @@
     .cabecalho__nav--ancor {
         color: var(--cor-textoLinkPrincipal);
         font-family: var(--fonte-textoLink);
-        font-size: 0.9em;
+        font-size: 2em;
         text-decoration: none;
         font-weight: 600;
         margin: 0 1em 0 1em;

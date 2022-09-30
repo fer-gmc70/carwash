@@ -1,3 +1,5 @@
+@media screen and (min-width: 375px){
+    
 .container__servicos{
     display: grid;
     width: 370px;
@@ -67,3 +69,4 @@
         object-fit: cover;
     
     }
+}

@@ -131,8 +131,9 @@
         color: var(--cor-titulo);
         font-family: var(--fonte-textoSecundario);
         font-weight: 550;
-        padding-bottom: 2em;
+        padding: 1em 0;
         text-align: center;
+        font-size: 1.5em;
     }
     .servicos__tipos__listaItems--ancora {
         text-decoration: none;
@@ -180,8 +181,9 @@
         color: var(--cor-titulo);
         font-family: var(--fonte-textoSecundario);
         font-weight: 550;
-        padding-bottom: 2em;
+        padding: 1em 0;
         text-align: center;
+        font-size: 2em;
     }
     .servicos__tipos__listaItems--ancora {
         text-decoration: none;
