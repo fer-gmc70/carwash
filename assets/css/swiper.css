@@ -1,39 +1,79 @@
-.swiper {
-    width: 350px;
-    height: 280px;
-    position: relative;
+@media screen and (min-width: 375px) {
+    .swiper {
+        max-width: 375px;
+        max-height: 300px;
+        position: relative;
+    }
+
+    .swiper-slide {
+        position: relative;
+        top: 0%;
+        display: flex;
+        justify-content: center;
+    }
+    .swiper-slide h3 {
+        position: absolute;
+        top: 3em;
+        padding: 1em 1.5em;
+        font-family: var(--fonte-textoDescricao);
+        color: var(--cor-titulo-swiper);
+        font-size: 1.9em;
+        word-wrap: wrap;
+        text-align: center;
+    }
+
+    .swiper-slide img {
+        border-radius: 10%;
+        width: 80vw;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
+    .swiper-pagination {
+        position: initial;
+        margin: 0.2em 0;
+    }
 }
 
-.swiper-slide {
-    position: relative;
-    top:0%;
-    display: flex;
-    justify-content: center;
-}
-.swiper-slide h3{
-    position: absolute;
-    top: 3em;
-    padding: 1em 1.5em;
-    font-family: var(--fonte-textoDescricao);
-    color: var(--cor-titulo-swiper);
-    font-size: 1.9em;
-    word-wrap: wrap;
-    text-align: center;
+@media screen and (min-width: 820px) {
+    .swiper {
+        max-width: 820px;
+        max-height: 775px;
+        position: relative;
+    }
 
-}
+    .swiper-slide {
+        position: relative;
+        top: 0%;
+        display: flex;
+        justify-content: center;
+    }
+    .swiper-slide h3 {
+        position: absolute;
+        top: 3em;
+        padding: 1em 1.5em;
+        font-family: var(--fonte-textoDescricao);
+        color: var(--cor-titulo-swiper);
+        font-size: 1.9em;
+        word-wrap: wrap;
+        text-align: center;
+    }
 
-.swiper-slide img {
-    border-radius: 10%;
-    width: 80vw;
-}
+    .swiper-slide img {
+        border-radius: 10%;
+        width: 80vw;
+    }
 
-.swiper-button-prev,
-.swiper-button-next {
-    display: none;
-}
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
 
-.swiper-pagination {
-    position: initial;
-    margin: .2em 0;
+    .swiper-pagination {
+        position: initial;
+        margin: 0.2em 0;
+    }
 }
-
