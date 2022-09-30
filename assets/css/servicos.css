@@ -2,18 +2,18 @@
     .servicos__tipos--lista {
         position: relative;
         margin-top: 3%;
-        gap: 1em;
+        gap: 1.5em;
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-grow: 1;
         flex-basis: auto;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .servicos__tipos--listaItems {
         border: none;
-        width: 375px;
     }
 
     .servicos__tipos__listaItems--img {
@@ -50,14 +50,14 @@
     .servicos__tipos--lista {
         position: relative;
         margin-top: 3%;
-        gap: 1em;
+        gap: 1.5em;
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-grow: 1;
         flex-basis: auto;
         flex-wrap: wrap;
-        width: 122vw;
+        width: 100%;
     }
 
     .servicos__tipos--listaItems {
@@ -97,14 +97,14 @@
     .servicos__tipos--lista {
         position: relative;
         margin-top: 3%;
-        gap: 1em;
+        gap: 1.5em;
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-grow: 1;
         flex-basis: auto;
         flex-wrap: wrap;
-        width: 180vw;
+        width: 100%;
     }
 
     .servicos__tipos--listaItems {
@@ -146,7 +146,7 @@
     .servicos__tipos--lista {
         position: relative;
         margin-top: 3%;
-        gap: 1em;
+        gap: 1.5em;
         display: flex;
         justify-content: center;
         flex-direction: row;
