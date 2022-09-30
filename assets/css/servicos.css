@@ -62,7 +62,6 @@
 
     .servicos__tipos--listaItems {
         border: none;
-        /* width: 820px; */
     }
 
     .servicos__tipos__listaItems--img {
@@ -110,7 +109,6 @@
 
     .servicos__tipos--listaItems {
         border: none;
-        width: 820px;
     }
 
     .servicos__tipos__listaItems--img {
@@ -155,12 +153,12 @@
         flex-grow: 1;
         flex-basis: auto;
         flex-wrap: wrap;
-        width: 190vw;
+        width: 100%;
     }
 
     .servicos__tipos--listaItems {
         border: none;
-        width: 1180px;
+        /* width: 1180px; */
     }
 
     .servicos__tipos__listaItems--img {

@@ -2,6 +2,7 @@
     .container {
         position: relative;
         margin-top: 50%;
+        width:100%;
     }
     .container h1 {
         font-family: var(--fonte-textoPrincipal);
@@ -18,7 +19,7 @@
     .container {
         position: relative;
         margin-top: 50%;
-        width: 125vw;
+        width: 100%;
     }
     .container h1 {
         font-family: var(--fonte-textoPrincipal);
@@ -35,14 +36,15 @@
 @media screen and (min-width: 820px) {
     .container {
         position: relative;
-        margin-top: 45%;
-        width: 180vw;
+        margin-top: 30%;
+        width: 100%;
     }
     .container h1 {
         font-family: var(--fonte-textoPrincipal);
         font-weight: 600;
         text-align: center;
-        margin-bottom: 1.3em;
+        margin-bottom: 2em;
+        font-size: 2em;
     }
     .container__servicos {
         position: absolute;
@@ -52,14 +54,15 @@
 @media screen and (min-width: 1180px) {
     .container {
         position: relative;
-        margin-top: 45%;
+        margin-top: 30%;
+        width: 100%;
     }
     .container h1 {
         font-family: var(--fonte-textoPrincipal);
         font-weight: 600;
         text-align: center;
-        margin-bottom: 1.3em;
-        font-size: 1em;
+        margin-bottom: 2em;
+        font-size: 2em;
     }
     .container__servicos {
         position: absolute;
