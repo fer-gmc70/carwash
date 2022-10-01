@@ -36,3 +36,9 @@ body {
 .italico{
     font-style: italic;
 }
+
+iframe{
+    border: none;
+    width:100%;
+    height: 20vw;
+}
